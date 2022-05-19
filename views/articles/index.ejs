@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Sneaker | All item</title>
+  </head>
+  <body>
+    <a href="/sneakers/create">Buat Produk Baru</a>
+    <br />
+    <br />
+
+    <% sneakers.forEach(i => { %>
+    <div>
+      <h1><%= i.name %></h1>
+      <p><%= i.description %></p>
+      <a href="/sneakers/<%= i.id %>">Baca lebih lanjut</a>
+    </div>
+    <% }) %>
+  </body>
+</html>
